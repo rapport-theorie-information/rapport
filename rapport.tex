@@ -26,6 +26,31 @@
 \newpage
 %exo 1 :
 \section{Lien entre entropie discrète et continue}
+$X$ est une variable aléatoire de densité $f_{X}$ continue.\\
+$\forall \Delta > 0$, $X_{\Delta} = \sum_{i\in \mathbb{Z}} x_{i}\mathbb{1}_{[i\Delta,(i+1)\Delta]}(X)$ où $x_i \in [i\Delta,(i+1)\Delta]$.\\
+
+\[
+1- \quad
+\frac{1}{\Delta} \int_{i\Delta}^{(i+1)\Delta} f_X(x) \, dx = \frac{1}{\Delta} (F_X((i+1)\Delta) - F_X(i\Delta)) = \frac{F_X((i+1)\Delta) - F_X(i\Delta)}{(i+1)\Delta - i\Delta}
+\]
+
+D'après le théorème des accroissements finis appliqués sur $F_X$ sur $[i\Delta,(i+1)\Delta]$: \\
+\[
+\forall i \in \mathbb{Z}, \exists x_i \in ]i\Delta,(i+1)\Delta[, \quad f_X(x_i) = \frac{1}{\Delta} \int_{i\Delta}^{(i+1)\Delta} f_X(x) \,dx
+\]
+
+\[
+2- \quad
+P(X_\Delta = x_i) = P(i\Delta \leq X \leq (i+1)\Delta) = \int_{i\Delta}^{(i+1)\Delta} f_X(x) \, dx = \Delta f_X(x_i) 
+\]
+
+\begin{align*}
+    3- \quad H(X_\Delta) & = E(-\log(P_X\Delta)) \\
+    & = \sum_{i\in \mathbb{Z}} -P(X_\Delta=x_i)\log(P(X_\Delta = x_i)) \\
+    & = - \sum_{i\in \mathbb{Z}} \Delta f_X(x_i)\log(\Delta f_X(x_i)) \\
+    & = - \Delta\left(\sum_{i\in \mathbb{Z}} f_X(x_i)\log(f_X(x_i)) + \log(\Delta) \sum_{i\in \mathbb{Z}} f_X(x_i)\right) \\
+    & = - \Delta\sum_{i\in \mathbb{Z}} f_X(x_i)\log(f_X(x_i)) - \log(\Delta)
+\end{align*}
 
 
 \newpage
