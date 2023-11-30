@@ -43,7 +43,12 @@ Pour vérifier maintenant numériquement que la densité de cette loi est bien $
 %  \label{hist}
 \end{figure}
 ceci prouve que la densité de $X$ est bien $f_X$ puisque les deux graphes sont compatibles,il nous reste maintenant à démontrer le résultat
-pour se faire,on calcule numériquement $\mathbb{H}(X_\Delta)+\log(\Delta)\underset{\Delta \rightarrow 0}{\rightarrow}\mathbb{H}(X)$ à l'aide du code python fourni en annexe,et en testant on trouve la valeur $-4.092594418520442$
+pour se faire,on calcule numériquement $\mathbb{H}(X_\Delta)+\log(\Delta)\underset{\Delta \rightarrow 0}{\rightarrow}\mathbb{H}(X)$,on calcule tout d'abord le membre gauche de la liit à l'aide d'un code python avec $\delta=1/n$ qui tend vers 0 fourni en annexe,et en testant on trouve la valeur $-4.092594418520442$,ensuite en calcule théoriquement $\mathbb{H}(X)$ à l'aide d'une intégration par partie comme ci dessous:
+\begin{align}
+  \mathbb{H}(X) &= -\int_{-\infty}^{\infty}f_{X}\log(f_X(x))dx\\
+  &=-\int_{-\infty}^{\infty}\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^2}\right)\log\left(\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^2}\right)\right)\\
+  &=-\int_{-\infty}^{\infty}
+\end{align}
 \newpage
 
 %exo 2 Partie 2:
