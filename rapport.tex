@@ -67,13 +67,21 @@ Pour vérifier maintenant numériquement que la densité de cette loi est bien $
   \caption{histogramme-densité}
 %  \label{hist}
 \end{figure}
-ceci prouve que la densité de $X$ est bien $f_X$ puisque les deux graphes sont compatibles,il nous reste maintenant à démontrer le résultat
-pour se faire,on calcule numériquement $\mathbb{H}(X_\Delta)+\log(\Delta)\underset{\Delta \rightarrow 0}{\rightarrow}\mathbb{H}(X)$,on calcule tout d'abord le membre gauche de la liit à l'aide d'un code python avec $\delta=1/n$ qui tend vers 0 fourni en annexe,et en testant on trouve la valeur $-4.092594418520442$,ensuite en calcule théoriquement $\mathbb{H}(X)$ à l'aide d'une intégration par partie comme ci dessous:
-\begin{align}
-  \mathbb{H}(X) &= -\int_{-\infty}^{\infty}f_{X}\log(f_X(x))dx\\
-  &=-\int_{-\infty}^{\infty}\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^2}\right)\log\left(\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^2}\right)\right)\\
-  &=-\int_{-\infty}^{\infty}
-\end{align}
+ceci prouve que la densité de $X$ est bien $f_X$ puisque les deux graphes sont compatibles,il nous reste maintenant à vérifier le résultat$\mathbb{H}(X_\Delta)+\log(\Delta)\underset{\Delta \rightarrow 0}{\rightarrow}\mathbb{H}(X)$,pour se faire,on calcule tout d'abord le membre gauche de la relation à l'aide d'un code python avec $\Delta=1/n$ qui tend vers 0 fourni en annexe,et en testant on trouve la valeur $0.21314555932018384$,ensuite en calcule théoriquement $\mathbb{H}(X)$ comme ci dessous:
+\begin{align*}
+  \mathbb{H}(X) &= -\int_{-\infty}^{\infty}f_{X}\log(f_X(x))\,dx \\
+  &= -\int_{-\infty}^{\infty}\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^2}\right)\log\left(\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^2}\right)\right)\,dx \\
+  &= \int_{-\infty}^{\infty}\left(\frac{\log(3\sqrt{2\pi})}{3\sqrt{2\pi}}\exp\left(-\frac{(x-2)^2}{18}\right) + \frac{1}{3\sqrt{2\pi}}\left(\frac{(x-2)^2}{18}\right)\exp\left(-\frac{(x-2)^2}{18}\right)\right)\,dx
+\end{align*}
+et on a d'après les intégrales de Gauss : $\int_{-\infty}^{\infty}\exp{-x^2}=\sqrt{\pi}$ et $\int_{\infty}^{\infty}x^2\exp(-x^2)=\frac{\sqrt{\pi}}{2}$ et donc par conséquent : 
+\begin{align*}
+  \mathbb{H}(X) &= \frac{1}{2}+\log(3\sqrt{2\pi})\\
+  \mathbb{H}(X) &= 2.51755
+\end{align*}
+cette valeur est très loin de la valeur obtenue numériquement,la relation n'est pas donc satisfaite pour une loi gaussièene univariée
+
+
+
 \newpage
 
 %exo 2 Partie 2:
@@ -95,8 +103,8 @@ pour se faire,on calcule numériquement $\mathbb{H}(X_\Delta)+\log(\Delta)\under
 \section{Annexe B}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{2.png}
-  \caption{val num}
+  \includegraphics[width=0.8\textwidth]{4.png}
+  \caption{entropie}
 %  \label{hist}
 \end{figure}
 
