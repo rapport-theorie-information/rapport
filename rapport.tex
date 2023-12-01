@@ -86,8 +86,20 @@ cette valeur est très loin de la valeur obtenue numériquement,la relation n'es
 
 %exo 2 Partie 2:
 \subsection{Loi gaussienne multivariée.}
-\newpage
+Soit \(\mu \in \mathbb{R}^p\) et \(X \in \mathcal{M}_p(\mathbb{R})\), pour générer des réalisations de \(X\), le processus se déroule en deux étapes :
 
+1. Dans la première étape, la fonction \texttt{np.random.randn} est utilisée pour créer une matrice \(Z\) où chaque ligne représente un échantillon indépendant d'une loi normale univariée \(N(0,1)\).
+
+\[
+Z = \begin{bmatrix}
+    Z_{1,1} & Z_{1,2} & \ldots & Z_{1,p} \\
+    Z_{2,1} & Z_{2,2} & \ldots & Z_{2,p} \\
+    \vdots  & \vdots  & \ddots & \vdots  \\
+    Z_{n,1} & Z_{n,2} & \ldots & Z_{n,p}
+\end{bmatrix}
+\]
+
+2. Dans la deuxième étape, une transformation linéaire est appliquée à ces échantillons en utilisant la décomposition de Cholesky de la matrice de covariance \(R\). Cela donne des échantillons de la loi normale multivariée recherchée \(X = \mu + Z \cdot L^T\), où \(Z\) est la matrice des échantillons de la loi normale univariée et \(L\) est la matrice triangulaire inférieure de la décomposition de Cholesky de \(R\).
 %exo3 : 
 \section{Analyse de données}
 
