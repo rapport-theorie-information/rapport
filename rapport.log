@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.2)  1 DEC 2023 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.2)  1 DEC 2023 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,8 +307,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \text{D'où lorsque } \(
+                              \Delta \rightarrow 0 \), \text{ On a } \( x_i ...
+
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...D'où lorsque } \( \Delta \rightarrow 0 \)
+                                                  , \text{ On a } \( x_i \ri...
+
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ... \Delta \rightarrow 0 \), \text{ On a } \(
+                                                   x_i \rightarrow x \).
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ... \), \text{ On a } \( x_i \rightarrow x \)
+                                                  .
+? 
 [2]
-Overfull \hbox (12.03618pt too wide) in paragraph at lines 82--84
+Overfull \hbox (12.03618pt too wide) in paragraph at lines 87--89
 \OT1/cmr/m/n/10 Pour v^^Serifier maintenant num^^Seriquement que la densit^^Se 
 de cette loi est bien $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 = [] [] []$,
  []
@@ -316,70 +358,87 @@ de cette loi est bien $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 = [] [] []$,
 <Figure_1.png, id=23, 462.528pt x 346.896pt>
 File: Figure_1.png Graphic file (type png)
 <use Figure_1.png>
-Package pdftex.def Info: Figure_1.png  used on input line 87.
+Package pdftex.def Info: Figure_1.png  used on input line 92.
 (pdftex.def)             Requested size: 341.43437pt x 256.09029pt.
 [3 <./Figure_1.png>]
 <6.png, id=30, 226.446pt x 119.84775pt>
 File: 6.png Graphic file (type png)
 <use 6.png>
-Package pdftex.def Info: 6.png  used on input line 126.
+Package pdftex.def Info: 6.png  used on input line 131.
 (pdftex.def)             Requested size: 298.75264pt x 158.12086pt.
 <7.png, id=31, 462.528pt x 346.896pt>
 File: 7.png Graphic file (type png)
 <use 7.png>
-Package pdftex.def Info: 7.png  used on input line 134.
+Package pdftex.def Info: 7.png  used on input line 139.
 (pdftex.def)             Requested size: 298.75264pt x 224.07703pt.
- [4 <./6.png> <./7.png>] [5]
-<1.png, id=41, 511.31026pt x 281.853pt>
+ [4 <./6.png> <./7.png>]
+<exo4_qst_2.png, id=38, 1369.115pt x 644.4075pt>
+File: exo4_qst_2.png Graphic file (type png)
+<use exo4_qst_2.png>
+Package pdftex.def Info: exo4_qst_2.png  used on input line 154.
+(pdftex.def)             Requested size: 341.43437pt x 160.69833pt.
+ [5 <./exo4_qst_2.png>]
+<1.png, id=42, 511.31026pt x 281.853pt>
 File: 1.png Graphic file (type png)
 <use 1.png>
-Package pdftex.def Info: 1.png  used on input line 172.
+Package pdftex.def Info: 1.png  used on input line 190.
 (pdftex.def)             Requested size: 341.43437pt x 188.22122pt.
-<4.png, id=42, 360.74776pt x 107.80275pt>
+<4.png, id=43, 360.74776pt x 107.80275pt>
 File: 4.png Graphic file (type png)
 <use 4.png>
-Package pdftex.def Info: 4.png  used on input line 180.
+Package pdftex.def Info: 4.png  used on input line 198.
 (pdftex.def)             Requested size: 341.43437pt x 102.03862pt.
-<5.png, id=43, 263.18324pt x 149.358pt>
+<5.png, id=44, 263.18324pt x 149.358pt>
 File: 5.png Graphic file (type png)
 <use 5.png>
-Package pdftex.def Info: 5.png  used on input line 187.
+Package pdftex.def Info: 5.png  used on input line 205.
 (pdftex.def)             Requested size: 213.39568pt x 121.10692pt.
  [6 <./1.png> <./4.png> <./5.png>]
-<8.png, id=50, 589.60275pt x 348.1005pt>
+<8.png, id=51, 589.60275pt x 348.1005pt>
 File: 8.png Graphic file (type png)
 <use 8.png>
-Package pdftex.def Info: 8.png  used on input line 195.
+Package pdftex.def Info: 8.png  used on input line 213.
 (pdftex.def)             Requested size: 341.43437pt x 201.57973pt.
- [7 <./8.png>] (./rapport.aux) ) 
+
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221   \includegraphics[width=0.8\textwidth]{}
+                                               
+? 
+[7 <./8.png>] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 5555 strings out of 480247
- 83658 string characters out of 5896151
+ 5593 strings out of 480247
+ 84113 string characters out of 5896151
  396343 words of memory out of 5000000
- 23443 multiletter control sequences out of 15000+600000
+ 23479 multiletter control sequences out of 15000+600000
  477630 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,11n,62p,705b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/wassim/.texlive2021/texmf-var/fonts/pk/
-ljfour/jknappen/ec/tcrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msbm7.pfb>
-Output written on rapport.pdf (7 pages, 289433 bytes).
+ </home/wassim/.texlive2021/texmf-var/fonts/pk/l
+jfour/jknappen/ec/tcrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm7.pfb>
+Output written on rapport.pdf (7 pages, 472805 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -61,18 +61,23 @@ D'après le théorème des accroissements finis appliqués sur $F_X$ sur $[i\Del
     & = - \sum_{i\in \mathbb{Z}} \left(\int_{i\Delta}^{(i+1)\Delta} f_X(x) \, dx\right) \log(f_X(x_i)) \\
     & = - \sum_{i\in \mathbb{Z}} \left(\int_{i\Delta}^{(i+1)\Delta} f_X(x)\log(f_X(x_i)) \, dx\right) \\
     & \underset{\Delta \rightarrow 0}{=} - \int_{-\infty}^{+\infty} f_X(x)\log(f_X(x)) \, dx\\
+    & \underset{\Delta \rightarrow 0}{=} \mathbb{H}(X)\\
 \end{align*}
 
-En effet, 
-\begin{align*}
-  \text{si} \; & i\Delta \leq x_i \leq (i+1)\Delta \; \text{et} \; i\Delta \leq x \leq (i+1)\Delta \\
-  \text{lorsque} \; \Delta \rightarrow 0 \; \text{on a} \; x_i \rightarrow x \\
-\end{align*}
+En effet,
 
-Par conséquent, \[\left(\int_{i\Delta}^{(i+1)\Delta} f_X(x)\log(f_X(x_i)) \, dx\right) = \left(\int_{i\Delta}^{(i+1)\Delta} f_X(x)\log(f_X(x)) \, dx\right)\]
+\[
+\text{On a } i\Delta \leq x_i \leq (i+1)\Delta \text{ et } i\Delta \leq x \leq (i+1)\Delta,
+\]
+\[
+\text{D'où lorsque} \( \Delta \rightarrow 0 \), \text{ On a } \( x_i \rightarrow x \).
+\]
+Par conséquent,
+\[
+\left(\int_{i\Delta}^{(i+1)\Delta} f_X(x)\log(f_X(x_i)) \, dx\right) \underset{\Delta \rightarrow 0}{=} \left(\int_{i\Delta}^{(i+1)\Delta} f_X(x)\log(f_X(x)) \, dx\right).
+\]
 
-On déduit qu'on peut approximer une variable aléatoire à densité par une variable aléatoire discrète, et on obtient la précision en restreignant les intervalles sur \([i\Delta, (i+1)\Delta]\).
-
+On en déduit qu'on peut approximer une variable aléatoire à densité par une variable aléatoire discrète, et on obtient la précision en restreignant les intervalles à \([i\Delta, (i+1)\Delta]\).
 
 \newpage
 
@@ -138,8 +143,21 @@ on superpose maintenant,à l'aide d'un code python fourni dans l'annexe D,dans u
 on constate donc trois ellipses parallèles.
 %exo3 : 
 \section{Analyse de données}
-%qst 3
-3 - D'après le cours, on a :
+
+
+   1-Voir annexe 
+
+
+   2-
+   \begin{figure}[h]
+     \centering
+     \includegraphics[width=0.8\textwidth]{exo4_qst_2.png}
+     \caption{les données pluviométriques des couples Bordeaux/Nantes, Boredaux/Santiago et Nantes/Santiago}
+   \end{figure}
+ %qst 3
+
+
+   3 - D'après le cours, on a :
 
 \[ I(X, Y) = H(X) - H(X | Y) \]
 
@@ -197,6 +215,12 @@ Ainsi , on conclut que :
 %  \label{hist}
 \end{figure}
 
-
+\section{Annexe E}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{}
+  \caption{code }
+%  \label{hist}
+\end{figure}
 
 \end{document}
