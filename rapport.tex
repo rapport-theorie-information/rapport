@@ -81,7 +81,6 @@ et on a d'après les intégrales de Gauss : $\int_{-\infty}^{\infty}\exp{-x^2}=\
 cette valeur est très loin de la valeur obtenue numériquement,la relation n'est pas donc satisfaite pour une loi gaussièene univariée
 
 
-
 \newpage
 
 %exo 2 Partie 2:
@@ -100,9 +99,24 @@ Z = \begin{bmatrix}
 \]
 
 2. Dans la deuxième étape, une transformation linéaire est appliquée à ces échantillons en utilisant la décomposition de Cholesky de la matrice de covariance \(R\). Cela donne des échantillons de la loi normale multivariée recherchée \(X = \mu + Z \cdot L^T\), où \(Z\) est la matrice des échantillons de la loi normale univariée et \(L\) est la matrice triangulaire inférieure de la décomposition de Cholesky de \(R\).
+on essaie maintenant d'appliquer ça dans un programme python comme celui fourni en annexe C,on obtient les résultats suivantes :
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{6.png}
+  \caption{expemple de réalisations}
+%  \label{hist}
+\end{figure}
+on superpose maintenant,à l'aide d'un code python fourni dans l'annexe D,dans une meme figure les lignes de niveaux de la densité de la loi gaussienne unvarié et l'histogramme de X on trouve la figure suivant
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{7.png}
+  \caption{niveaux densité}
+%  \label{hist}
+\end{figure}
+on constate donc trois ellipses parallèles.
 %exo3 : 
 \section{Analyse de données}
-
+\newpage
 \appendix
 \section{Annexe A}
 \begin{figure}[h]
@@ -116,8 +130,25 @@ Z = \begin{bmatrix}
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth]{4.png}
-  \caption{entropie}
+  \caption{entropie numérique}
 %  \label{hist}
 \end{figure}
+\section{Annexe C}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{5.png}
+  \caption{réalisations d'un vectur}
+%  \label{hist}
+\end{figure}
+\newpage
+\section{Annexe D}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{8.png}
+  \caption{code niveaux densité}
+%  \label{hist}
+\end{figure}
+
+
 
 \end{document}
