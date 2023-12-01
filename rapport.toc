@@ -1,0 +1,10 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Lien entre entropie discrète et continue}{2}{}%
+\contentsline {section}{\numberline {2}Loi gaussienne}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Loi gaussienne univariée.}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Loi gaussienne multivariée.}{4}{}%
+\contentsline {section}{\numberline {3}Analyse de données}{5}{}%
+\contentsline {section}{\numberline {A}Annexe A}{6}{}%
+\contentsline {section}{\numberline {B}Annexe B}{6}{}%
+\contentsline {section}{\numberline {C}Annexe C}{6}{}%
+\contentsline {section}{\numberline {D}Annexe D}{7}{}%

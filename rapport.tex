@@ -28,7 +28,7 @@
 \section{Lien entre entropie discrète et continue}
 
 
-$X$ est une variable aléatoire de densité $f_{X}$ continue.\\
+Soit $X$ est une variable aléatoire de densité $f_{X}$ continue.\\
 $\forall \Delta > 0$, $X_{\Delta} = \sum_{i\in \mathbb{Z}} x_{i}\mathbb{1}_{[i\Delta,(i+1)\Delta]}(X)$ où $x_i \in [i\Delta,(i+1)\Delta]$.\\
 
 1- 
@@ -138,6 +138,32 @@ on superpose maintenant,à l'aide d'un code python fourni dans l'annexe D,dans u
 on constate donc trois ellipses parallèles.
 %exo3 : 
 \section{Analyse de données}
+%qst 3
+3 - D'après le cours, on a :
+
+\[ I(X, Y) = H(X) - H(X | Y) \]
+
+Et :
+
+\[ H(X) = -\int f_X(x) \log(f_X(x)) \,dx \]
+
+Comme :
+
+\[ f_X(x) = \frac{1}{(2\pi)^{p/2} \det(R_X)^{1/2}} \exp\left(-\frac{1}{2} (x - \mu_X)^T R_X^{-1} (x - \mu_X)\right) \]
+
+où \(R_X\) est la matrice de covariance de la variable aléatoire \(X\).
+
+Alors :
+
+\[ H(X) = \frac{1}{2} \log((2\pi e)^p \det(R_X)) \]
+
+De même :
+
+\[ H(X | Y) = \frac{1}{2} \log((2\pi e)^p \det(R_{X|Y})) \]
+
+Ainsi , on conclut que :
+\[ I(X, Y) = \frac{1}{2} \log\left(\frac{\det(R_X) \cdot \det(R_Y)}{\det(R_{X|Y})}\right) \]
+
 \newpage
 \appendix
 \section{Annexe A}
